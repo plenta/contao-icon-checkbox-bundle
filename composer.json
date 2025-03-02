@@ -1,0 +1,45 @@
+{
+    "name": "plenta/contao-icon-checkbox-bundle",
+    "type": "contao-bundle",
+    "description": "Icon checkbox for cool funnels",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Plenta.io",
+            "homepage": "https://plenta.io"
+        }
+    ],
+    "funding": [{
+        "type": "github",
+        "url": "https://github.com/sponsors/plenta"
+    }],
+    "support":{
+        "issues": "https://github.com/plenta/contao-icon-checkbox-bundle/issues",
+        "source": "https://github.com/plenta/contao-icon-checkbox-bundle"
+    },
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "contao/conflicts": "@dev",
+        "contao/core-bundle": "^5.3"
+    },
+    "require-dev": {
+        "contao/manager-bundle": "^5.3"
+    },
+    "extra": {
+        "contao-manager-plugin": "Plenta\\IconCheckboxBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Plenta\\IconCheckboxBundle\\": "src"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "contao-components/installer": true,
+            "contao/manager-plugin": true,
+            "contao-community-alliance/composer-plugin": true
+        }
+    }
+}
