@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+    <file>
+        <body>
+            <trans-unit id="tl_form_field.iconCheckbox_singleSRC.0">
+                <target>Bild oder Icon</target>
+            </trans-unit>
+            <trans-unit id="tl_form_field.iconCheckbox_singleSRC.1">
+                <target>Bitte wählen Sie eine Datei aus der Dateiübersicht.</target>
+            </trans-unit>
+            <trans-unit id="tl_form_field.iconCheckbox_name.0">
+                <target>Bezeichnung</target>
+            </trans-unit>
+            <trans-unit id="tl_form_field.iconCheckbox_name.1">
+                <target>Bitte geben Sie die Bezeichnung der Checkbox ein.</target>
+            </trans-unit>
+            <trans-unit id="tl_form_field.iconCheckbox_value.0">
+                <target>Wert</target>
+            </trans-unit>
+            <trans-unit id="tl_form_field.iconCheckbox_value.1">
+                <target>Bitte geben Sie den Standard-Wert für die Checkbox ein.</target>
+            </trans-unit>
+            <trans-unit id="tl_form_field.iconCheckbox_description.0">
+                <target>Beschreibung</target>
+            </trans-unit>
+            <trans-unit id="tl_form_field.iconCheckbox_description.1">
+                <target>Hier können Sie eine Beschreibung für die Icon-Checkbox eingeben.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

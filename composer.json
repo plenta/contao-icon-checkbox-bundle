@@ -21,7 +21,8 @@
         "php": "^8.0",
         "ext-json": "*",
         "contao/conflicts": "@dev",
-        "contao/core-bundle": "^5.3"
+        "contao/core-bundle": "^5.3",
+        "mvo/contao-group-widget": "^1.5"
     },
     "require-dev": {
         "contao/manager-bundle": "^5.3"

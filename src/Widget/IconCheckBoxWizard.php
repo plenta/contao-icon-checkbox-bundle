@@ -12,13 +12,17 @@ declare(strict_types=1);
 
 namespace Plenta\IconCheckboxBundle\Widget;
 
-use Contao\Widget;
+use Contao\FormCheckbox;
 
-class IconCheckBoxWizard extends Widget
+class IconCheckBoxWizard extends FormCheckbox
 {
     protected $blnSubmitInput = true;
 
-    protected $strTemplate = 'be_widget_chk';
+    protected $strTemplate = 'form_icon_checkbox';
+
+    protected $strError = '';
+
+    protected $strPrefix = 'widget widget-icon-checkbox';
 
     public function __construct($arrAttributes=null)
     {
@@ -30,6 +34,6 @@ class IconCheckBoxWizard extends Widget
 
     public function generate()
     {
-        return 'Text';
+        return '-';
     }
 }
