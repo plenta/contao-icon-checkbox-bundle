@@ -36,4 +36,29 @@ class IconCheckBoxWizard extends FormCheckbox
     {
         return '-';
     }
+
+    protected function getOptions()
+    {
+        return [];
+    }
+
+    public function validate()
+    {
+        $mandatory = $this->mandatory;
+        $options = $this->getPost($this->strName);
+
+        if ($mandatory) {
+            $this->mandatory = true;
+        }
+    }
+
+    public function __get($strKey)
+    {
+        return parent::__get($strKey);
+    }
+
+    public function __set($strKey, $varValue)
+    {
+        parent::__set($strKey, $varValue);
+    }
 }
