@@ -28,3 +28,7 @@ composer require plenta/contao-icon-checkbox-bundle
 - PHP: `^8.0`
 - Contao: `^5.3`
 - mvo/contao-group-widget `^1.5`
+
+## Thanks to our supporter! ❤️
+
+- [MONOTOMIC](https://monotomic.de)
