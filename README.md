@@ -5,9 +5,9 @@
 The Icon Checkbox makes forms more intuitive. Instead of standard checkboxes, it uses icons for better visual selection – ideal for funnels, filters, and guided processes.  
 
 🚀 Key Benefits:  
-✅ Improved Usability: Icons enable faster decision-making.  
-✅ Seamless Contao Integration: Easy to implement & customize.  
-✅ Highly Flexible: Use your own SVGs or built-in icon sets.  
+✅ Improved Usability: Icons enable faster decision-making  
+✅ Seamless Contao Integration: Easy to implement & customize  
+✅ Highly Flexible: Use your own SVGs or images  
 
 ## Installation
 
