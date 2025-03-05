@@ -9,6 +9,8 @@ The Icon Checkbox makes forms more intuitive. Instead of standard checkboxes, it
 ✅ Seamless Contao Integration: Easy to implement & customize  
 ✅ Highly Flexible: Use your own SVGs or images  
 
+![Funnel example](docs/example.jpg)
+
 ## Installation
 
 ### Install using Contao Manager
