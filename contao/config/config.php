@@ -12,4 +12,4 @@ declare(strict_types=1);
 
 use Plenta\IconCheckboxBundle\Widget\IconCheckBoxWizard;
 
-$GLOBALS['TL_FFL']['iconCheckbox'] = IconCheckBoxWizard::class;
+$GLOBALS['TL_FFL']['icon_checkbox'] = IconCheckBoxWizard::class;

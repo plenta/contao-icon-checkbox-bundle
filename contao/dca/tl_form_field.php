@@ -8,7 +8,7 @@
  * @link          https://github.com/plenta/
  */
 
-$GLOBALS['TL_DCA']['tl_form_field']['palettes']['iconCheckbox'] = '
+$GLOBALS['TL_DCA']['tl_form_field']['palettes']['icon_checkbox'] = '
     {type_legend},type,name,label;
     {fconfig_legend},mandatory,multiple;
     {options_legend},iconOptions;
