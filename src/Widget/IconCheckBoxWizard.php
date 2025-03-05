@@ -13,6 +13,7 @@ declare(strict_types=1);
 namespace Plenta\IconCheckboxBundle\Widget;
 
 use Contao\FormCheckbox;
+use Contao\StringUtil;
 
 class IconCheckBoxWizard extends FormCheckbox
 {
@@ -22,9 +23,9 @@ class IconCheckBoxWizard extends FormCheckbox
 
     protected $strError = '';
 
-    protected $strPrefix = 'widget widget-icon-checkbox';
+    protected $strPrefix = 'widget widget-checkbox widget-icon-checkbox';
 
-    public function __construct($arrAttributes=null)
+    public function __construct($arrAttributes = null)
     {
         parent::__construct($arrAttributes);
 
@@ -32,33 +33,42 @@ class IconCheckBoxWizard extends FormCheckbox
         $this->decodeEntities = true;
     }
 
+    public function __set($strKey, $varValue): void
+    {
+        switch ($strKey) {
+            case 'iconOptions':
+                $this->arrOptions = $this->createOptions($varValue);
+                break;
+
+            case 'options':
+                break;
+
+            default:
+                parent::__set($strKey, $varValue);
+                break;
+        }
+    }
+
     public function generate()
     {
         return '-';
     }
 
-    protected function getOptions()
+    protected function createOptions($varValue)
     {
-        return [];
-    }
+        $arrOptions = [];
 
-    public function validate()
-    {
-        $mandatory = $this->mandatory;
-        $options = $this->getPost($this->strName);
+        $options = StringUtil::deserialize($varValue, true);
 
-        if ($mandatory) {
-            $this->mandatory = true;
+        foreach ($options as $option) {
+            $arrOptions[] = [
+                'value' => $option['value'],
+                'label' => $option['name'],
+                'description' => $option['description'],
+                'singleSRC' => $option['singleSRC'],
+            ];
         }
-    }
 
-    public function __get($strKey)
-    {
-        return parent::__get($strKey);
-    }
-
-    public function __set($strKey, $varValue)
-    {
-        parent::__set($strKey, $varValue);
+        return $arrOptions;
     }
 }

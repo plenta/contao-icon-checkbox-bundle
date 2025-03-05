@@ -2,11 +2,11 @@
 <xliff version="1.1">
     <file>
         <body>
-            <trans-unit id="FFL.iconCheckbox.0">
+            <trans-unit id="FFL.icon_checkbox.0">
                 <source>Icon checkbox</source>
                 <target>Icon-Checkbox</target>
             </trans-unit>
-            <trans-unit id="FFL.iconCheckbox.1">
+            <trans-unit id="FFL.icon_checkbox.1">
                 <source>An icon-based checkbox list with multiple selectable options.</source>
                 <target>Eine Icon-Checkbox-Liste mit mehrerer Optionen, von denen beliebig viele ausgewählt werden können.</target>
             </trans-unit>

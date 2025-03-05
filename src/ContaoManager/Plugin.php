@@ -25,7 +25,7 @@ class Plugin implements BundlePluginInterface
         return [
             BundleConfig::create(PlentaIconCheckboxBundle::class)
                 ->setLoadAfter([
-                    ContaoCoreBundle::class
+                    ContaoCoreBundle::class,
                 ]),
         ];
     }

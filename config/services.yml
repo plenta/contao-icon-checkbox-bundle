@@ -1,0 +1,8 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Plenta\IconCheckboxBundle\:
+        resource: ../src/*
+        exclude: ../src/{Entity,Migrations,Resources,Tests}

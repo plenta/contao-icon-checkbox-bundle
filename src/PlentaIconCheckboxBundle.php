@@ -18,4 +18,8 @@ use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
 class PlentaIconCheckboxBundle extends AbstractBundle
 {
+    public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void
+    {
+        $container->import('../config/services.yml');
+    }
 }
