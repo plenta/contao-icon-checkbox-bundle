@@ -12,9 +12,8 @@ declare(strict_types=1);
 
 namespace Plenta\IconCheckboxBundle\Widget;
 
-use Contao\FormCheckbox;
 use Contao\StringUtil;
-use Contao\System;
+use Contao\FormCheckbox;
 
 class IconCheckBoxWizard extends FormCheckbox
 {
@@ -50,19 +49,8 @@ class IconCheckBoxWizard extends FormCheckbox
         }
     }
 
-    public function generate()
-    {
-        return 'Icon-Checkbox';
-    }
-
     public function parse($arrAttributes = null)
     {
-        $request = System::getContainer()->get('request_stack')->getCurrentRequest();
-
-        if ($request && System::getContainer()->get('contao.routing.scope_matcher')->isBackendRequest($request)) {
-            return 'dfddsg'; //$this->html = 'aerstdtfgjhkj';
-        }
-
         $GLOBALS['TL_CSS']['plenta-icon-checkbox'] = 'bundles/plentaiconcheckbox/style.css|1';
 
         return parent::parse($arrAttributes);
