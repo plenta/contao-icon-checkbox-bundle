@@ -9,10 +9,10 @@
                 <target>Bitte wählen Sie eine Datei aus der Dateiübersicht.</target>
             </trans-unit>
             <trans-unit id="tl_form_field.iconCheckbox_name.0">
-                <target>Label</target>
+                <target>Bezeichnung</target>
             </trans-unit>
             <trans-unit id="tl_form_field.iconCheckbox_name.1">
-                <target>Bitte geben Sie das Label Checkbox ein.</target>
+                <target>Bitte geben Sie die Bezeichnung der Checkbox ein.</target>
             </trans-unit>
             <trans-unit id="tl_form_field.iconCheckbox_value.0">
                 <target>Wert</target>
