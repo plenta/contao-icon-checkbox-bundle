@@ -26,6 +26,12 @@
             <trans-unit id="tl_form_field.iconCheckbox_description.1">
                 <target>Hier können Sie eine Beschreibung für die Icon-Checkbox eingeben.</target>
             </trans-unit>
+            <trans-unit id="tl_form_field.iconCheckbox_css.0">
+                <target>Icon-Checkbox CSS laden</target>
+            </trans-unit>
+            <trans-unit id="tl_form_field.iconCheckbox_css.1">
+                <target>Dem Layout das Icon-Checkbox CSS hinzufügen.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

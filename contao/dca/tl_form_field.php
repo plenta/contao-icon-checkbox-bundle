@@ -16,7 +16,7 @@ $GLOBALS['TL_DCA']['tl_form_field']['palettes']['icon_checkbox'] = '
     {type_legend},type,name,label;
     {fconfig_legend},mandatory,multiple;
     {options_legend},iconOptions;
-    {expert_legend:hide},class,iconCheckbox_imgSize;
+    {expert_legend:hide},class,iconCheckbox_imgSize,iconCheckbox_css;
     {template_legend:hide},customTpl;
     {invisible_legend:hide},invisible
 ';
@@ -67,4 +67,10 @@ $GLOBALS['TL_DCA']['tl_form_field']['fields']['iconCheckbox_imgSize'] =
     'reference' => &$GLOBALS['TL_LANG']['MSC'],
     'eval' => ['rgxp' => 'natural', 'includeBlankOption' => true, 'nospace' => true, 'helpwizard' => true, 'tl_class' => 'w50'],
     'sql' => "varchar(128) COLLATE ascii_bin NOT NULL default ''",
+];
+
+$GLOBALS['TL_DCA']['tl_form_field']['fields']['iconCheckbox_css'] = [
+    'inputType' => 'checkbox',
+    'eval' => ['tl_class' => 'w50 m12'],
+    'sql' => ['type' => 'boolean', 'default' => true]
 ];
