@@ -51,7 +51,7 @@ class IconCheckBoxWizard extends FormCheckbox
 
     public function parse($arrAttributes = null)
     {
-        $GLOBALS['TL_CSS']['plenta-icon-checkbox'] = 'bundles/plentaiconcheckbox/style.css|1';
+        $GLOBALS['TL_CSS']['plenta-icon-checkbox'] = 'bundles/plentaiconcheckbox/style.css|3';
 
         return parent::parse($arrAttributes);
     }

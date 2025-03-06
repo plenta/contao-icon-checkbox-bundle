@@ -1,6 +1,7 @@
 html {
     --plenta-icon-checkbox-background-color: #fff;
-    --plenta-icon-checkbox-border: 1px solid #999;
+    --plenta-icon-checkbox-background-color-active: #dadada;
+    --plenta-icon-checkbox-border: 1px solid #dadada;
     --plenta-icon-checkbox-border-radius: 10px;
     --plenta-icon-checkbox-padding: 20px;
     --plenta-icon-checkbox-grid-gap: 16px;
@@ -19,15 +20,30 @@ html {
         grid-template-columns: repeat(auto-fit, minmax(var(--plenta-icon-checkbox-grid-min-width), 1fr));
 
         > span {
-            border: var(--plenta-icon-checkbox-border);
-            border-radius: var(--plenta-icon-checkbox-border-radius);
-            background-color: var(--plenta-icon-checkbox-background-color);
-            padding: var(--plenta-icon-checkbox-padding);
-        }
+            position: relative;
 
-        label {
-            display: flex;
-            flex-direction: column;
+            input {
+                position: absolute;
+                opacity: 0;
+            }
+
+            label {
+                display: flex;
+                gap: 0.9em;
+                flex-direction: column;
+                margin: 0;
+                border: var(--plenta-icon-checkbox-border);
+                border-radius: var(--plenta-icon-checkbox-border-radius);
+                background-color: var(--plenta-icon-checkbox-background-color);
+                padding: var(--plenta-icon-checkbox-padding);
+                cursor: pointer;
+                height: 100%;
+                box-sizing: border-box;
+            }
+
+            input:checked + label, label:hover, label:focus {
+                background-color: var(--plenta-icon-checkbox-background-color-active);
+            }
         }
     }
 
