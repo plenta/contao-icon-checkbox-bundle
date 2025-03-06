@@ -29,9 +29,11 @@
             <span>
                 <input type="<?= $this->multiple ? 'checkbox' : 'radio' ?>" name="<?= $option['name'] ?>" id="opt_<?= $option['id'] ?>" class="<?= $this->multiple ? 'checkbox' : 'radio' ?>" value="<?= $option['value'] ?>"<?= $option['checked'] ?><?= $option['attributes'] ?>>
                 <label id="lbl_<?= $option['id'] ?>" for="opt_<?= $option['id'] ?>">
-                    <span class="icon-checkbox-label"><?= $option['label'] ?></span>
                     <span class="icon-checkbox-icon"><?= $this->figure($option['singleSRC'], $this->iconCheckbox_imgSize) ?></span>
-                    <span class="icon-checkbox-description"><?= $option['description'] ?></span>
+                    <span class="icon-checkbox-label"><?= $option['label'] ?></span>
+                    <?php if ($option['description']): ?>
+                        <span class="icon-checkbox-description"><?= $option['description'] ?></span>
+                    <?php endif ?>
                 </label>
             </span>
         <?php endif; ?>
