@@ -63,6 +63,8 @@ class IconCheckBoxWizard extends FormCheckbox
             return 'dfddsg'; //$this->html = 'aerstdtfgjhkj';
         }
 
+        $GLOBALS['TL_CSS']['plenta-icon-checkbox'] = 'bundles/plentaiconcheckbox/style.css|1';
+
         return parent::parse($arrAttributes);
     }
 
